@@ -1,11 +1,158 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="sm:scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TailwindCSS Project</title>
+    <title>Acme Rockets</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="favicon.ico" type="image/x-icon" />
   </head>
-  <body></body>
+  <body class="min-h-screen bg-slate-50 dark:bg-black dark:text-white">
+    <header class="sticky top-0 z-10 bg-teal-700 text-white">
+      <section class="mx-auto flex max-w-4xl items-center justify-between p-4">
+        <h1 class="text-3xl font-medium">
+          <a href="#hero">🚀 Acme Rockets</a>
+        </h1>
+
+        <button
+          id="mobile-open-btn"
+          class="text-3xl focus:outline-none sm:hidden"
+        >
+          &#9776;
+        </button>
+
+        <nav class="hidden sm:block" aria-label="main">
+          <ul class="flex space-x-8 text-xl">
+            <li><a class="hover:opacity-70" href="#rockets">Our Rockets</a></li>
+            <li>
+              <a class="hover:opacity-70" href="#testimonials">Testimonials</a>
+            </li>
+            <li><a class="hover:opacity-70" href="#contact">Contact Us</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+
+    <main class="mx-auto max-w-4xl">
+      <section
+        id="hero"
+        class="mb-12 flex scroll-mt-40 flex-col-reverse items-center justify-center gap-8 p-6 sm:flex-row"
+      >
+        <article class="sm:w-1/2">
+          <h2
+            class="max-w-md text-center text-4xl font-bold text-slate-900 sm:text-left sm:text-5xl dark:text-white"
+          >
+            We Boldly Go
+            <span class="text-indigo-700 dark:text-indigo-300"
+              >Where No Rocket</span
+            >
+            Has Gone Before...
+          </h2>
+          <p
+            class="mt-4 max-w-md text-center text-2xl text-slate-700 sm:text-left dark:text-slate-400"
+          >
+            We're building rockets for the next century today. From the moon to
+            Mars, Jupitor and beyond...
+          </p>
+          <p
+            class="mt-4 max-w-md text-center text-2xl text-slate-700 sm:text-left dark:text-slate-400"
+          >
+            Think Acme Rockets.
+          </p>
+        </article>
+
+        <img
+          class="w-1/2"
+          src="./img/rocketdab.png"
+          alt="Astronaut dab rocket"
+        />
+      </section>
+
+      <hr class="mx-auto w-1/2 bg-black dark:bg-white" />
+
+      <section id="rockets" class="my-12 scroll-mt-20 p-6">
+        <h2
+          class="mb-6 text-center text-4xl font-bold text-slate-900 sm:text-5xl dark:text-white"
+        >
+          Our Rockets
+        </h2>
+        <ul class="mx-auto my-12 flex list-none flex-col gap-8 sm:flex-row">
+          <li
+            class="mx-auto flex w-2/3 flex-col items-center space-y-2 rounded-3xl border border-black bg-white px-2 py-6 shadow-xl sm:w-5/6 dark:border-gray-100 dark:bg-black"
+          >
+            <img class="mb-6 w-1/2" src="./img/rocketman.png" alt="rocket" />
+            <h3 class="text-center text-3xl text-slate-900 dark:text-white">
+              Expolrer
+            </h3>
+            <p
+              class="mt-2 hidden text-center text-3xl text-slate-500 sm:block dark:text-slate-400"
+            >
+              $
+            </p>
+            <p
+              class="mt-2 text-center text-2xl text-slate-500 sm:hidden dark:text-slate-400"
+            >
+              Affordable Exploration
+            </p>
+          </li>
+          <li
+            class="mx-auto flex w-2/3 flex-col items-center space-y-2 rounded-3xl border border-black bg-white px-2 py-6 shadow-xl sm:w-5/6 dark:border-gray-100 dark:bg-black"
+          >
+            <img class="mb-6 w-1/2" src="./img/rocketride.png" alt="rocket" />
+            <h3 class="text-center text-3xl text-slate-900 dark:text-white">
+              Adventurer
+            </h3>
+            <p
+              class="mt-2 hidden text-center text-3xl text-slate-500 sm:block dark:text-slate-400"
+            >
+              $$
+            </p>
+            <p
+              class="mt-2 text-center text-2xl text-slate-500 sm:hidden dark:text-slate-400"
+            >
+              Best Selling Rocket!
+            </p>
+          </li>
+          <li
+            class="mx-auto flex w-2/3 flex-col items-center space-y-2 rounded-3xl border border-black bg-white px-2 py-6 shadow-xl sm:w-5/6 dark:border-gray-100 dark:bg-black"
+          >
+            <img class="mb-6 w-1/2" src="./img/rocketlaunch.png" alt="rocket" />
+            <h3 class="text-center text-3xl text-slate-900 dark:text-white">
+              Infinity
+            </h3>
+            <p
+              class="mt-2 hidden text-center text-3xl text-slate-500 sm:block dark:text-slate-400"
+            >
+              $$$
+            </p>
+            <p
+              class="mt-2 text-center text-2xl text-slate-500 sm:hidden dark:text-slate-400"
+            >
+              Luxury Starship
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <hr class="mx-auto w-1/2 bg-black dark:bg-white" />
+
+      <section class="my-12 p-6" id="testimonials">
+        <h2
+          class="mb-6 text-center text-4xl font-bold text-slate-900 sm:text-5xl dark:text-white"
+        >
+          Testimonials
+        </h2>
+      </section>
+
+      <hr class="mx-auto w-1/2 bg-black dark:bg-white" />
+
+      <section class="my-12 p-6" id="contact">
+        <h2
+          class="mb-6 text-center text-4xl font-bold text-slate-900 sm:text-5xl dark:text-white"
+        >
+          Contact Us
+        </h2>
+      </section>
+    </main>
+  </body>
 </html>
