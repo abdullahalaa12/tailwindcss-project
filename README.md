@@ -5,10 +5,12 @@ This project was built as part of Dave Gray's Tailwind CSS tutorial, showcasing 
 ## Preview
 
 ### Desktop View:
-![Desktop Screenshot](https://github.com/user-attachments/assets/0b037079-fde8-43db-8808-6946e8781b15)
+![image](https://github.com/user-attachments/assets/702c9bd2-be98-4262-9b3a-d483b6c245ab)
+
 
 ### Mobile View:
-![Mobile Screenshot](https://github.com/user-attachments/assets/3247a419-e4f0-4b7b-8d04-4a9786d2478b)
+![image](https://github.com/user-attachments/assets/c9ef861c-bb47-4ff1-b9b6-5301d3dc9bab)
+
 
 ## Features
 - Responsive design optimized for both mobile and desktop views.
